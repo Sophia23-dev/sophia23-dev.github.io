@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+         <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>vakantie</title>
+</head>
+<body>
+    <div class="content-box">
+
+    <div id="menu"></div>
+
+    <h1>holiday</h1>
+    <p>mijn vakantie</p>
+    <p>ik ben naar oosterijk gegaan met mijn ouders en mijn oudere broers en mijn schoonzus</p>
+    <p>daar ben ik gaan raften heb ik een boomen parkour gedaan en heb ik op de bergen gestaan terwijl het sneeude</p>
+    <p>voor de rest heb ik veel thuis gezeten lekker diamond painten</p>
+
+
+
+    </div>
+    <script>
+
+fetch('menu.html')
+
+.then(response => response.text())
+
+.then(data => {
+
+document.getElementById('menu').innerHTML = data;
+
+});
+
+</script>
+
+    
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eten</title>
+   
+</head>
+<body>
+<div class="content-box">
+
+    <div id="menu"></div>
+
+
+<script>
+
+fetch('menu.html')
+
+.then(response => response.text())
+
+.then(data => {
+
+document.getElementById('menu').innerHTML = data;
+
+});
+
+</script>
+    <h1>Eten</h1>
+
+    <table>
+        <tr>
+            <th>food</th>
+            <th>Foto</th>
+            
+        </tr>
+        <tr>
+            <td>Pokebowl</td>
+            <td><img src="pokebowl.jpg" alt="Pokebowl"></td>
+            
+        </tr>
+        <tr>
+            <td>bannaan</td>
+            <td><img src="banaan.jpg" alt="banana"></td>
+        <tr>
+            <td>Aardbeien</td>
+            <td><img src="aarbei1.jpg" alt="aardbei" ></td>
+            
+        </tr>
+        <tr>
+            <td>friet</td>
+            <td><img src="friet.jpg" alt="friet"></td>
+        </tr>
+        <tr>
+            <td>verse worst</td>
+            <td><img src="worst.webp" alt="worst"></td>
+    </table>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+     <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mijn motivatie</title>
+   
+   
+</head>
+<body>
+    <div class="content-box">
+
+    <div id="menu"></div>
+
+
+<script>
+
+fetch('menu.html')
+
+.then(response => response.text())
+
+.then(data => {
+
+document.getElementById('menu').innerHTML = data;
+
+});
+
+</script>
+        <h1>Mijn motivatie</h1>
+        <p>De realisatie dat ik 23 ben zonder mbo-diploma.</p>
+        <p>En ik daardoor niet echt een toekomst kon zien.</p>
+        <p>Besloot ik te kijken naar waar ik naar school wil.</p>
+        <p>En toen bedacht ik me dat ik het heel interessant vind hoe computers werken.</p>
+        <p>Daar zou ik wel mijn werk van kunnen maken.</p>
+        <p>En zo doende ben ik hier begonnen met ICT niveau 4.</p>
+    </div>
+
+</body>
+</html>

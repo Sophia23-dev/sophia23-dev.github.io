@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>This is me</title>
+   
+ 
+</head>
+<body>
+    <div class="content-box">
+        <header>
+            <h1>Sophia van den Brom</h1>
+        </header>
+
+        <div id="menu"></div>
+
+
+<script>
+
+fetch('menu.html')
+
+.then(response => response.text())
+
+.then(data => {
+
+document.getElementById('menu').innerHTML = data;
+
+});
+
+</script>
+
+        <main>
+            <p>Ben 23 jaar oud</p>
+            <p>Woon met mijn ouders en oudere broer Dion</p>
+            <p>Mijn oudere broer Ramon is de oudste en die woont niet meer thuis</p>
+            <p>Heb 2 katten: Lizzy en Solo</p>
+            <audio controls>
+
+  <source src="ohana.mp3" type="audio/mpeg">
+
+</audio>
+            <img src="mickey.webp" alt="Mickey">
+            <video width="320" height="240" controls>
+                <source src="lilo.mp4" type="video/mp4">
+               
+        </main>
+    </div>
+</body>
+</html>
